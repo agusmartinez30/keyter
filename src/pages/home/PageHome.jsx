@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -15,7 +16,7 @@ import {
   TextError,
 } from "./PageHome.elements";
 
-const PageHome = ({ crearUsuario, setName, name, count, listaUsuarios }) => {
+const PageHome = ({ crearUsuario, setName, name, listaUsuarios }) => {
   //VALIDAR!
   const [error, setError] = useState(false);
   const navigate = useNavigate();
@@ -43,6 +44,11 @@ const PageHome = ({ crearUsuario, setName, name, count, listaUsuarios }) => {
     }
   };
 
+  
+
+
+  
+
   return (
     <HomeContainer className="home-container">
       <Header>
@@ -64,6 +70,7 @@ const PageHome = ({ crearUsuario, setName, name, count, listaUsuarios }) => {
         </FormContainer>
 
         <ListContainer>
+          {/* <button onClick={cleanStorageWinners}>Limpiar</button> */}
           <GanadorTitle>Ganadores</GanadorTitle>
           <ListGanadores>
             <ul>

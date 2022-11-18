@@ -38,8 +38,13 @@ export const LayoutFlex = styled.div`
 
   @media  (max-width: 900px) {
 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
+
+  
   }
 `;
 
@@ -56,7 +61,7 @@ export const FormContainer = styled.form`
  font-weight: 300;
 
   @media  (max-width: 900px) {
-    width: 100%;
+    width: 80%;
   }
 
   > label {
@@ -101,7 +106,7 @@ export const ListContainer = styled.section`
   border-radius: 9px;
 
   @media  (max-width: 900px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
@@ -126,6 +131,12 @@ export const ListGanadores = styled.div`
   /* display: flex;
   justify-content: center; */
 
+
+
+
+  @media  (max-width: 900px) {
+    width: 60%;
+  }
 
 
  

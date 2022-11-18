@@ -51,7 +51,7 @@ const PageGame = ({ name, setName, crearUsuario }) => {
         <GameTitle>Adivina la llave maestra</GameTitle>
         <InfoContainer>
           <BtnHome onClick={backPageHome}>Volver</BtnHome>
-          <InfoGame>nombre: {name}</InfoGame>
+          <InfoGame>Jugador: <span>{name}</span> </InfoGame>
         </InfoContainer>
 
         <GridLayout>
