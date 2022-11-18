@@ -1,0 +1,11 @@
+.card-container {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.card-container:hover{
+    background-color: red;
+}
+.card-container > img {
+    width: 100px;
+}
